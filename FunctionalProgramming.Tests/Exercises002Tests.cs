@@ -21,5 +21,13 @@ namespace FunctionalProgramming.Tests
 
             result.Should().BeEquivalentTo(test);
         }
+
+        [Fact]
+        public void GetUsernames_ReturnsAListOfUsernamesFromListOfEmails()
+        {
+            List<string> emails = Exercises002.GetCoolPeople();
+            Action act = () => emails.ForEach(Exercises002.GetUsernames);
+            act.Should().NotThrow();
+        }
     }
 }

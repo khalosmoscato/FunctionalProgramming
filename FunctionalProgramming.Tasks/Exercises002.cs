@@ -14,5 +14,9 @@ namespace FunctionalProgramming.Tasks
             "alice.yang@midfielder.com",
             "pippa.austin@musician.com"
         };
+
+        public static Action<string> GetUsernames = usernames => Console.WriteLine(usernames.Split('@')[0]);
+        public static Action<List<string>> PrintCoolPeople = usernames => usernames.ForEach(Console.WriteLine);
+
     }
 }
