@@ -31,4 +31,16 @@ public class Exercises001Tests
         
         result.Should().Equal(expected);
     }
+
+    [Fact]
+    public void SumIndices_ReturnsSumOfIndexesOfSelectedCharsInStringOneAndTwo()
+    {
+        string s1 = "start";
+        string s2 = "pale";
+        int expected = 5;
+
+        int result = Exercises001.SumIndices(s1, s2);
+
+        result.Should().Be(expected);
+    }
 }
