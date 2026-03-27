@@ -43,4 +43,15 @@ public class Exercises001Tests
 
         result.Should().Be(expected);
     }
+    
+    [Fact]
+    public void CheckValidEmail_ReturnsSuccessMEssage_WhenEmailIsValid()
+    {
+        string email = "khalos@northcoders.co.uk";
+        string expected = "Email domain and user valid, please continue";
+
+        string result = Exercises001.CheckValidEmail(email);
+
+        result.Should().Be(expected);
+    }
 }
