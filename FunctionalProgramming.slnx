@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FunctionalProgramming.Tasks/FunctionalProgramming.Tasks.csproj" />
+  <Project Path="FunctionalProgramming.Tests/FunctionalProgramming.Tests.csproj" />
+</Solution>
